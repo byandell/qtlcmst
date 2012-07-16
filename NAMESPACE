@@ -1,0 +1,32 @@
+###########################################################################
+# Shared object library load directives.
+#
+# Shared object library does not need to be called in the .onLoad function in
+# zzz.r.
+#
+
+############################################################################
+# Export directives.  These directives export functions.  S3 methods for
+# classes declared in the package should be declared with the "S3method"
+# directive.
+#
+
+## export(CausalRocCurve)
+## export(GetRocMatrix)
+
+export(SimCrossCausal)
+export(GetCommonQtls)
+export(CMSTtests)
+export(CMSTtestsList)
+
+## export(FitAllTests)
+## export(CitTests)
+
+## export(mySimulations)
+
+##############################################################################
+# S3method declarations.  These will allow generic methods to function properly
+# with functions such as "plot.qb" declared in the package.
+#
+
+## S3method(plot, qtlnet)
